@@ -1,0 +1,36 @@
+*{
+
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+   
+}
+
+#image-logo{
+    width: 80px;
+    margin: 10px 0 40px 20px;
+}
+
+h2{
+    color: #333;
+    font-size: 60px;
+    
+}
+span{
+ color: #017143;
+ font-size:70px ;
+ font-weight: 900;
+ }
+
+ p{
+font-size: 16px;
+
+ }
+ button{
+    background: #017143;
+    color: #fff;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    padding: 11px;
+    width: 150
