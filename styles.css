@@ -1,0 +1,94 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    padding: 20px 100px 0 200px;
+    background: radial-gradient(ellipse at center, #C9FFC6 0%, #D5FFDA 54%, #FFFFFF 100%);
+}
+.container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.caixa-texto{
+    width: 600px;
+}
+
+#image-logo {
+    width: 80px;
+    margin: 10px 0 40px 20px;
+}
+
+h2 {
+    color: #333;
+    font-size: 60px;
+
+}
+
+span {
+    color: #017143;
+    font-size: 70px;
+    font-weight: 900;
+}
+
+p {
+    font-size: 16px;
+    width: 800px;
+
+}
+
+button {
+    margin-top: 20px;
+    background: #017143;
+    color: #fff;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    padding: 11px;
+    width: 150px;
+}
+
+
+.img-principal {
+    width: 500px;
+  
+}
+.caixa-img{
+    display: flex;
+    width:600px ;
+    justify-content: flex-end;
+    margin-top: 240px;
+}
+.botao-menu{
+    
+    width: 100px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin: 10px;
+}
+.botao-menu:hover{
+    transform: translateY(-30px);
+}
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: -50px;
+}
+.circulo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #017143;
+    top: 0;
+    left: 0;
+    clip-path: circle(786px at right 999px);
+    z-index: -1;
+
+
+}
