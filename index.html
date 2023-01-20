@@ -7,39 +7,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,900;1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,900;1,200&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
     <title>Starbucks</title>
 </head>
 
 <body>
 
-<div class="circulo"> </div>
+    <div class="circulo"> </div>
 
-    <img id="image-logo" src="./images/logo.png" alt="logo-da-images">
-<div class="container">
-    <section class="caixa-texto">
-        <h2>Não é apenas café, <br>
-            é <span>Starbucks</span> </h2>
+    <img id="img-logo" src="./images/logo.png" alt="logo-img">
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quaerat repellat nostrum placeat ratione, vitae
-            laudantium error quasi unde doloremque, harum a quo? Ut impedit nemo natus possimus perferendis eaque?</p>
+    <div
+     class="container">
 
-        <button>Saber mais</button>
-    </section>
+        <section class="caixa-texto">
+            <h2>Não é apenas café, <br>
+                é <span>Starbucks</span> </h2>
 
-   <section class="caixa-img">
-        <img class="img-principal" src="./images/img1.png" >
-    </section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quaerat repellat nostrum placeat ratione,
+                vitae
+                laudantium error quasi unde doloremque, harum a quo? Ut impedit nemo natus possimus perferendis eaque?
+            </p>
 
-</div>
+            <button>Saber mais</button>
+        </section>
+
+        <section class="caixa-img">
+            <img src="./images/img1.png" class="Starbucks">
+        </section>
+
+    </div>
     <footer>
-        <img class="botao-menu"  src="./images/thumb1.png" >
-        <img class="botao-menu" src="./images/thumb2.png" >
-        <img class="botao-menu"src="./images/thumb3.png" >
+        <img class="botao-menu" src="./images/thumb1.png" onclick="trocaImagem( './images/img1.png') ; trocaCor('#017143')">
+        <img class="botao-menu" src="./images/thumb2.png" onclick="trocaImagem( './images/img2.png') ; trocaCor('#eb7495')">
+        <img class="botao-menu" src="./images/thumb3.png" onclick="trocaImagem( './images/img3.png') ; trocaCor('#d752b1')">
     </footer>
 
 
 </body>
+
+<script>
+
+    let imagem = document.querySelector(".Starbucks")
+
+    let circulo = document.querySelector(".circulo")
+
+    function trocaImagem(endereco) {
+        imagem.src = endereco
+
+    }
+
+    function trocaCor(cor){
+        circulo.style.background = cor
+
+    }
+    
+
+
+</script>
 
 </html>

@@ -11,17 +11,17 @@ body {
     background: radial-gradient(ellipse at center, #C9FFC6 0%, #D5FFDA 54%, #FFFFFF 100%);
 }
 .container{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
+    display: flex; /*permite que alteremos a posição dos elementos na tela */
+    width: 100%;/* largura*/
+    justify-content: space-between;/*permite justificar / alinhar os componentes na horizontal */
+    align-items: center;/*permite alinhar os componentes na vertical */
 }
 .caixa-texto{
     width: 600px;
 }
 
-#image-logo {
-    width: 80px;
+#img-logo {
+    width: 100px;
     margin: 10px 0 40px 20px;
 }
 
@@ -50,8 +50,9 @@ button {
     border-radius: 40px;
     border: none;
     cursor: pointer;
-    padding: 11px;
-    width: 150px;
+    padding: 12px;
+    width: 200px;
+    font-size: 20px;
 }
 
 
